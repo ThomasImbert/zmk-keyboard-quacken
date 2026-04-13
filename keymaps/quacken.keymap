@@ -42,10 +42,10 @@
     num_lock_layer: num_lock_layer {
       display-name = "NumLock";
       bindings = <
-        &trans  &kp W  &kp Q &kp C   &kp O   &kp P    &to BASE_LAYER S_N7  S_N8  S_N9  S_FSLH  &to BASE_LAYER
-        ESCAPE  &kp F  &kp A &kp S   &kp E   &kp N    S_MINUS        S_N4  S_N5  S_N6  S_N0    &trans
-        &kp DEL &kp B  &kp Z &kp X   &kp T   &kp V  S_COMMA        S_N0  S_N2  S_N3  S_DOT   &trans
-                LTHUMB_TUCK  &lt GAME_HOME_LAYER LS(SPACE)  &lt GAME_REACH_LAYER    &trans  &lt NAV_NUM_LAYER LS(SPACE)  &EZ_SL(SYMBOLS_LAYER)
+        &kp DEL  &kp W  &kp Q &kp C   &kp O   &kp P    &to BASE_LAYER S_N7  S_N8  S_N9  S_FSLH  &to BASE_LAYER
+        &kp ESCAPE  &kp F  &kp A &kp S   &kp E   &kp N    S_MINUS        S_N4  S_N5  S_N6  S_N0    &trans
+        &kp LCTL &kp B  &kp Z &kp X   &dash   &kp V  S_COMMA        S_N0  S_N2  S_N3  S_DOT   &trans
+                &trans  &lt GAME_HOME_LAYER LS(SPACE)  &lt GAME_REACH_LAYER    &trans  &lt NAV_NUM_LAYER LS(SPACE)  &EZ_SL(SYMBOLS_LAYER)
       >;
     };
 

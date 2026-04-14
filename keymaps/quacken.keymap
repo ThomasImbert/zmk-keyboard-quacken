@@ -99,8 +99,8 @@
 			bindings = <
 				&kp DEL     &kp K     &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTFPS_LAYER &none &none &none &none &to BASE_LAYER
 				&kp ESCAPE  &kp COMMA &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
-				&kp LCTL    &kp B     &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
-				&trans  &lt GAME_HOMERTS_LAYER LS(SPACE)  &EZ_SL(GAME_REACHRTS_LAYER)   &trans  &trans  &trans
+				&kp LSHFT   &kp B     &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
+				&sym_shift_altgr  &lt GAME_HOMERTS_LAYER SPACE &EZ_SL(GAME_REACHRTS_LAYER)  &trans  &trans  &trans
 			>;
 		};
 
@@ -135,7 +135,7 @@
 				&kp TAB     &kp LALT  &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTS_LAYER &none &none &none &none  &to BASE_LAYER
 				&kp ESCAPE  &kp LSHFT &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
 				&kp Y       &kp LCTL  &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
-				RTHUMB_TUCK  &kp SPACE  &EZ_SL(GAME_REACHFPS_LAYER)               &trans  &trans  &trans
+				&sym_shift_altgr  &kp SPACE  &EZ_SL(GAME_REACHFPS_LAYER)          &trans  &trans  &trans
 			>;
 		};
 

@@ -108,7 +108,7 @@
 		game_homeRTS_layer: game_homeRTS_layer {
 			display-name = "GameHomeRTS";
 			bindings = <
-				&kp F5  &kp N0     &kp N6     &kp N7       &kp N8     &kp N9         &none    &none     &none     &none     &none   &trans
+				&kp F6  &kp N0     &kp N6     &kp N7       &kp N8     &kp N9         &none    &none     &none     &none     &none   &trans
 				&kp TAB &kp F5     &kp F1     &kp F2       &kp F3     &kp F4         &none    &none     &none     &none     &none   &trans
 				&trans  &kp N5     &kp N1     &kp N2       &kp N3     &kp N4         &none    &none     &none     &none     &none   &trans
 			                                           &none  &none  &none         &trans  &trans  &trans
@@ -122,7 +122,7 @@
 				&kp RALT &kp P  &kp SEMI  &kp D     &kp E   &kp R          &none    &none     &none     &none     &none   &trans
 				&none    &kp M  &kp Y     &kp FSLH  &kp H   &kp PG_UP      &none    &none     &none     &none     &none   &trans
 				&trans   &kp F  &kp U     &kp DOT   &kp N   &kp PG_DN      &none    &none     &none     &none     &none   &trans
-                                           &none &none  &none      &trans  &trans  &trans
+                                           &none &none  &trans     &trans  &trans  &trans
 			>;
 		};
 
@@ -148,7 +148,7 @@
         &trans  &kp N9     &kp N7    &trans     &kp N1  &kp N4         &none    &none     &none     &none     &none   &trans
         &trans  &trans     &kp N8    &trans     &kp N2  &kp N5         &none    &none     &none     &none     &none   &trans
         &trans  &trans     &kp U     &kp DOT    &kp N3  &kp N6         &none    &none     &none     &none     &none   &trans
-                                            &none &none  &none         &trans  &trans  &trans
+                                            &none &trans &none         &trans  &trans  &trans
       >;
     };
 
@@ -158,10 +158,10 @@
     game_special_layer: game_special_layer {
       display-name = "GameSpecial";
       bindings = <
-        &trans  &kp F13    &kp F14   &kp F15    &kp F16 &kp F17        &none    &none     &none     &none     &none   &trans
-        &trans  &kp F18    &kp F19   &kp F20    &kp F21 &kp F22        &none    &none     &none     &none     &none   &trans
-        &trans  &kp F23    &kp F24   &kp EXCL   &kp AT  &kp DLLR       &none    &none     &none     &none     &none   &trans
-                                            &none &none  &none         &trans  &trans  &trans
+        &trans  &digraph LBKT Q  &kp F14   &kp F15    &kp F16 &kp F17                        &none    &none     &none     &none     &none   &trans
+        &trans  &kp F12    &kp F8    &kp F9     &kp F10 &kp F11                        &none    &none     &none     &none     &none   &trans
+        &trans  &kp F23    &kp F24   &kp EXCL   &kp AT  &kp DLLR                       &none    &none     &none     &none     &none   &trans
+                                            &none &none  &trans                        &trans  &trans  &trans
       >;
     };
 
@@ -170,6 +170,22 @@
 	};
 };
 
+
+// circumflex accent
+//#define C_ACRC &digraph LBKT Q // â
+//#define C_ECRC &digraph LBKT E // ê
+//#define C_ICRC &digraph LBKT I // î
+//#define C_OCRC &digraph LBKT O // ô
+//#define C_UCRC &digraph LBKT U // û
+//#define C_YCRC &digraph LBKT Y // ŷ
+//
+//// diaeresis
+//#define C_ADIA &digraph LBRC Q // ä
+//#define C_EDIA &digraph LBRC E // ë
+//#define C_IDIA &digraph LBRC I // ï
+//#define C_ODIA &digraph LBRC O // ö
+//#define C_UDIA &digraph LBRC U // ü
+//#define C_YDIA &digraph LBRC Y // ÿ
 // Emulated layouts (experimental!)
 #ifdef KB_EMULATION_DVORAK
   #include "emulations/dvorak.dtsi"

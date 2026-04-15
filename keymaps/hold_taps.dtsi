@@ -20,10 +20,10 @@
 #define GAME_REACHRTS_LAYER 8
 #define GAME_QWERTFPS_LAYER 9
 #define GAME_REACHFPS_LAYER 10
-
+#define GAME_SPECIAL_LAYER  11
 // Potentially used by other keymaps deriving from this one, who may add extra layers.
 // Make sure this stays equal to <index_of_last_layer> + 1
-#define EXTRA_LAYERS_START_INDEX 11
+#define EXTRA_LAYERS_START_INDEX 12
 
 
 /**

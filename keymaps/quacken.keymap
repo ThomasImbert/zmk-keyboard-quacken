@@ -100,7 +100,7 @@
 				&kp DEL                        &kp K      &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTFPS_LAYER &none &none &none &none &to BASE_LAYER
 				&EZ_SL(GAME_REACHRTS_LAYER)    &kp COMMA  &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
 				&kp ESCAPE                     &kp B      &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
-				       &EZ_SL(SYMBOLS_LAYER)  &lt GAME_HOMERTS_LAYER SPACE &kp LSHIFT                 &trans  &trans  &trans
+				  &EZ_SL(GAME_SPECIAL_LAYER)  &lt GAME_HOMERTS_LAYER SPACE &kp LSHIFT                 &trans  &trans  &trans
 			>;
 		};
 
@@ -109,7 +109,7 @@
 			display-name = "GameHomeRTS";
 			bindings = <
 				&kp F5  &kp N0     &kp N6     &kp N7       &kp N8     &kp N9         &none    &none     &none     &none     &none   &trans
-				&none   &kp F4     &kp F1     &kp F2       &kp TAB    &kp F3         &none    &none     &none     &none     &none   &trans
+				&kp TAB &kp F5     &kp F1     &kp F2       &kp F3     &kp F4         &none    &none     &none     &none     &none   &trans
 				&trans  &kp N5     &kp N1     &kp N2       &kp N3     &kp N4         &none    &none     &none     &none     &none   &trans
 			                                           &none  &none  &none         &trans  &trans  &trans
 			>;
@@ -135,7 +135,7 @@
 				&kp TAB     &kp LALT  &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTS_LAYER &none &none &none &none  &to BASE_LAYER
 				&kp ESCAPE  &kp LSHFT &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
 				&kp Y       &kp LCTL  &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
-				&EZ_SL(SYMBOLS_LAYER) &kp SPACE  &EZ_SL(GAME_REACHFPS_LAYER)          &trans  &trans  &trans
+				&EZ_SL(GAME_SPECIAL_LAYER) &kp SPACE  &EZ_SL(GAME_REACHFPS_LAYER)          &trans  &trans  &trans
 			>;
 		};
 
@@ -151,6 +151,20 @@
                                             &none &none  &none         &trans  &trans  &trans
       >;
     };
+
+		// 11. Game reach fps layer with some transparent keys to allow for some movement while held
+		//													Access to number keys for inventory switching, common hotkey in games
+		//													Can still access modifiers and tab with 5th finger
+    game_special_layer: game_special_layer {
+      display-name = "GameSpecial";
+      bindings = <
+        &trans  &kp F13    &kp F14   &kp F15    &kp F16 &kp F17        &none    &none     &none     &none     &none   &trans
+        &trans  &kp F18    &kp F19   &kp F20    &kp F21 &kp F22        &none    &none     &none     &none     &none   &trans
+        &trans  &kp F23    &kp F24   &kp EXCL   &kp AT  &kp DLLR       &none    &none     &none     &none     &none   &trans
+                                            &none &none  &none         &trans  &trans  &trans
+      >;
+    };
+
 
 
 	};

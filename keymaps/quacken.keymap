@@ -98,9 +98,9 @@
 			display-name = "GameQweRTS";
 			bindings = <
 				&kp DEL                        &kp K      &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTFPS_LAYER &none &none &none &none &to BASE_LAYER
-				&kp EZ_SL(GAME_REACHRTS_LAYER) &kp COMMA  &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
+				&EZ_SL(GAME_REACHRTS_LAYER)    &kp COMMA  &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
 				&kp ESCAPE                     &kp B      &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
-				&EZ_SL(SYMBOLS_LAYER)  &lt GAME_HOMERTS_LAYER SPACE &LSHIFT  &trans  &trans  &trans
+				       &EZ_SL(SYMBOLS_LAYER)  &lt GAME_HOMERTS_LAYER SPACE &kp LSHIFT                 &trans  &trans  &trans
 			>;
 		};
 
@@ -122,7 +122,7 @@
 				&kp RALT &kp P  &kp SEMI  &kp D     &kp E   &kp R          &none    &none     &none     &none     &none   &trans
 				&none    &kp M  &kp Y     &kp FSLH  &kp H   &kp PG_UP      &none    &none     &none     &none     &none   &trans
 				&trans   &kp F  &kp U     &kp DOT   &kp N   &kp PG_DN      &none    &none     &none     &none     &none   &trans
-                                  				&none &none  &none      &trans  &trans  &trans
+                                           &none &none  &none      &trans  &trans  &trans
 			>;
 		};
 

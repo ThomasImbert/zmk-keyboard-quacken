@@ -19,7 +19,7 @@
     base_layer: base_layer {
       display-name = "Base";
       bindings = <
-        &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y  &kp U  &kp I     &kp O   &kp P      &to GAME_QWERTS_LAYER
+        &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y  &kp U  &kp I     &kp O   &kp P      &to DELETE
         &kp ESCAPE HRM_A  HRM_S  HRM_D  HRM_F  &kp G        &kp H  HRM_J  HRM_K     HRM_L   HRM_SEMI   &kp ENTER
         &kp LSHIFT &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHIFT
                 LTHUMB_TUCK  LTHUMB_HOME  LTHUMB_REACH    RTHUMB_REACH  RTHUMB_HOME  RTHUMB_TUCK
@@ -83,8 +83,8 @@
 		fn_media_layer: fn_media_layer {
 			display-name = "FnMedia";
 			bindings = <
-				&trans  &kp F1  &kp F2  &kp F3  &kp F4  &none         &none  &kp C_VOL_DN  &kp C_VOL_UP &kp C_BRI_UP   &kp SLCK      &trans
-				&trans  &kp F5  &kp F6  &kp F7  &kp F8  &none         &none  H_J C_PP    H_K C_MUTE     H_L C_AL_LOCK  H_SEMI PSCRN  &trans
+				&trans  &kp F1  &kp F2  &kp F3  &kp F4  &none         &none  &kp C_VOL_DN  &kp C_VOL_UP &kp C_BRI_UP   &kp SLCK      &GAME_QWERTS_LAYER
+				&trans  &kp F5  &kp F6  &kp F7  &kp F8  &none         &none  H_J C_PP    H_K C_MUTE     H_L C_AL_LOCK  H_SEMI PSCRN  &GAME_QWERTFPS_LAYER
 				&trans  &kp F9  &kp F10 &kp F11 &kp F12 &none         &none  &kp C_NEXT  &kp C_PREV     &kp C_BRI_DN   &kp INS       &trans
 				&trans  &trans  &bootloader   &sys_reset  &trans  &studio_unlock
 			>;
@@ -97,10 +97,10 @@
 		game_qweRTS_layer: game_qweRTS_layer {
 			display-name = "GameQweRTS";
 			bindings = <
-				&kp DEL     &kp K     &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTFPS_LAYER &none &none &none &none &to BASE_LAYER
-				&kp ESCAPE  &kp COMMA &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
-				&kp LSHFT   &kp B     &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
-				&sym_shift_altgr  &lt GAME_HOMERTS_LAYER SPACE &EZ_SL(GAME_REACHRTS_LAYER)  &trans  &trans  &trans
+				&kp DEL                        &kp K      &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTFPS_LAYER &none &none &none &none &to BASE_LAYER
+				&kp EZ_SL(GAME_REACHRTS_LAYER) &kp COMMA  &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
+				&kp ESCAPE                     &kp B      &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
+				&EZ_SL(SYMBOLS_LAYER)  &lt GAME_HOMERTS_LAYER SPACE &LSHIFT  &trans  &trans  &trans
 			>;
 		};
 
@@ -108,8 +108,8 @@
 		game_homeRTS_layer: game_homeRTS_layer {
 			display-name = "GameHomeRTS";
 			bindings = <
-				&trans  &kp N0     &kp N6     &kp N7       &kp N8     &kp N9         &none    &none     &none     &none     &none   &trans
-				&trans  &kp F1     &kp F2     X_SHTAB      &kp TAB    &kp F3         &none    &none     &none     &none     &none   &trans
+				&kp F5  &kp N0     &kp N6     &kp N7       &kp N8     &kp N9         &none    &none     &none     &none     &none   &trans
+				&none   &kp F4     &kp F1     &kp F2       &kp TAB    &kp F3         &none    &none     &none     &none     &none   &trans
 				&trans  &kp N5     &kp N1     &kp N2       &kp N3     &kp N4         &none    &none     &none     &none     &none   &trans
 			                                           &none  &none  &none         &trans  &trans  &trans
 			>;
@@ -119,9 +119,9 @@
 		game_reachRTS_layer: game_reachRTS_layer {
 			display-name = "GameReachRTS";
 			bindings = <
-				&trans  &kp P  &kp SEMI  &kp D     &kp E   &kp R          &none    &none     &none     &none     &none   &trans
-				&trans  &kp M  &kp Y     &kp FSLH  &kp H   &kp PG_UP      &none    &none     &none     &none     &none   &trans
-				&trans  &kp F  &kp U     &kp DOT   &kp N   &kp PG_DN      &none    &none     &none     &none     &none   &trans
+				&kp RALT &kp P  &kp SEMI  &kp D     &kp E   &kp R          &none    &none     &none     &none     &none   &trans
+				&none    &kp M  &kp Y     &kp FSLH  &kp H   &kp PG_UP      &none    &none     &none     &none     &none   &trans
+				&trans   &kp F  &kp U     &kp DOT   &kp N   &kp PG_DN      &none    &none     &none     &none     &none   &trans
                                   				&none &none  &none      &trans  &trans  &trans
 			>;
 		};
@@ -135,7 +135,7 @@
 				&kp TAB     &kp LALT  &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTS_LAYER &none &none &none &none  &to BASE_LAYER
 				&kp ESCAPE  &kp LSHFT &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
 				&kp Y       &kp LCTL  &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
-				&sym_shift_altgr  &kp SPACE  &EZ_SL(GAME_REACHFPS_LAYER)          &trans  &trans  &trans
+				&EZ_SL(SYMBOLS_LAYER) &kp SPACE  &EZ_SL(GAME_REACHFPS_LAYER)          &trans  &trans  &trans
 			>;
 		};
 

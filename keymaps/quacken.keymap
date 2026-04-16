@@ -97,10 +97,10 @@
 		game_qweRTS_layer: game_qweRTS_layer {
 			display-name = "GameQweRTS";
 			bindings = <
-				&kp DEL                        &kp K      &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTFPS_LAYER &none &none &none &none &to BASE_LAYER
-				&EZ_SL(GAME_REACHRTS_LAYER)    &kp COMMA  &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
-				&kp ESCAPE                     &kp B      &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
-				  &EZ_SL(GAME_SPECIAL_LAYER)  &lt GAME_HOMERTS_LAYER SPACE &kp LSHIFT                 &trans  &trans  &trans
+				&kp DEL                        &kp K               &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTFPS_LAYER &none &none &none &none &to BASE_LAYER
+				&EZ_SL(GAME_REACHRTS_LAYER)    &hrm LSHIFT COMMA   &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
+				&kp ESCAPE                     &kp B               &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
+		                               &osm LSHIFT &lt GAME_HOMERTS_LAYER SPACE   &kp LALT                 &trans  &trans  &trans
 			>;
 		};
 
@@ -122,7 +122,7 @@
 				&kp RALT &kp P  &kp SEMI  &kp D     &kp E   &kp R          &none    &none     &none     &none     &none   &trans
 				&none    &kp M  &kp Y     &kp FSLH  &kp H   &kp PG_UP      &none    &none     &none     &none     &none   &trans
 				&trans   &kp F  &kp U     &kp DOT   &kp N   &kp PG_DN      &none    &none     &none     &none     &none   &trans
-                                           &none &none  &trans     &trans  &trans  &trans
+                                         &trans &none  &trans      &trans  &trans  &trans
 			>;
 		};
 
@@ -152,16 +152,14 @@
       >;
     };
 
-		// 11. Game reach fps layer with some transparent keys to allow for some movement while held
-		//													Access to number keys for inventory switching, common hotkey in games
-		//													Can still access modifiers and tab with 5th finger
+		// 11. Game special layer which disregard the ability to hold fps base keys to instead offer rarer additional keys
     game_special_layer: game_special_layer {
       display-name = "GameSpecial";
       bindings = <
-        &trans  &digraph LBKT Q  &kp F14   &kp F15    &kp F16 &kp F17                        &none    &none     &none     &none     &none   &trans
-        &trans  &kp F12    &kp F8    &kp F9     &kp F10 &kp F11                        &none    &none     &none     &none     &none   &trans
-        &trans  &kp F23    &kp F24   &kp EXCL   &kp AT  &kp DLLR                       &none    &none     &none     &none     &none   &trans
-                                            &none &none  &trans                        &trans  &trans  &trans
+        &trans  &kp KP_DOT  &kp KP_COMMA   &kp KP_LPAR      &kp KP_RPAR    &kp HOME           &none    &none     &none     &none     &none   &trans
+        &trans  &kp KP_PLUS &kp KP_MINUS   &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp KP_EQUAL       &none    &none     &none     &none     &none   &trans
+        &trans  &kp F12     &kp F8         &kp F9           &kp F10        &kp F11            &none    &none     &none     &none     &none   &trans
+                                                               &none &none  &trans            &trans  &trans  &trans
       >;
     };
 

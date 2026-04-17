@@ -83,9 +83,9 @@
 		fn_media_layer: fn_media_layer {
 			display-name = "FnMedia";
 			bindings = <
-				&trans  &kp F1  &kp F2  &kp F3  &kp F4  &none         &none  &kp C_VOL_DN  &kp C_VOL_UP &kp C_BRI_UP   &kp SLCK      &to GAME_QWERTS_LAYER
-				&trans  &kp F5  &kp F6  &kp F7  &kp F8  &none         &none  H_J C_PP    H_K C_MUTE     H_L C_AL_LOCK  H_SEMI PSCRN  &to GAME_QWERTFPS_LAYER
-				&trans  &kp F9  &kp F10 &kp F11 &kp F12 &none         &none  &kp C_NEXT  &kp C_PREV     &kp C_BRI_DN   &kp INS       &trans
+				&trans  &kp F1  &kp F2  &kp F3  &kp F4  &none         H_L C_AL_LOCK  &kp C_VOL_DN  &kp C_VOL_UP &kp C_BRI_UP   &kp SLCK      &to GAME_QWERTS_LAYER
+				&trans  &kp F5  &kp F6  &kp F7  &kp F8  &none         &kp C_PREV     H_J C_PP      H_K C_MUTE   &kp C_NEXT     H_SEMI PSCRN  &to GAME_QWERTFPS_LAYER
+				&trans  &kp F9  &kp F10 &kp F11 &kp F12 &none         &none          &none         &none        &kp C_BRI_DN   &kp INS       &trans
 				&trans  &trans  &bootloader   &sys_reset  &trans  &studio_unlock
 			>;
 		};
@@ -98,7 +98,7 @@
 			display-name = "GameQweRTS";
 			bindings = <
 				&kp DEL                        &kp K               &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTFPS_LAYER &none &none &none &none &to BASE_LAYER
-				&EZ_SL(GAME_REACHRTS_LAYER)    &hrm LSHIFT COMMA   &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
+				&EZ_SL(GAME_REACHRTS_LAYER)    &sc LSHIFT COMMA    &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
 				&kp ESCAPE                     &kp B               &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
 		                               &osm LSHIFT &lt GAME_HOMERTS_LAYER SPACE   &kp LALT                 &trans  &trans  &trans
 			>;

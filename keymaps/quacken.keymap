@@ -100,7 +100,7 @@
 				&kp DEL                        &kp K               &kp Q &kp T   &kp D   &kp J                 &to GAME_QWERTFPS_LAYER &none &none &none &none &to BASE_LAYER
 				&EZ_SL(GAME_REACHRTS_LAYER)    &sck LSHIFT COMMA   &kp A &kp S   &kp I   &kp G                 &none    &none     &none     &none     &none   &trans
 				&kp ESCAPE                     &kp B               &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none     &none   &trans
-		                               &osm LSHIFT &lt GAME_HOMERTS_LAYER SPACE   &kp LALT                 &trans  &trans  &trans
+		                               &osm LSHIFT &lt GAME_HOMERTS_LAYER SPACE   &kp LCTL                 &trans  &trans  &trans
 			>;
 		};
 
@@ -163,27 +163,9 @@
       >;
     };
 
-
-
 	};
 };
 
-
-// circumflex accent
-//#define C_ACRC &digraph LBKT Q // â
-//#define C_ECRC &digraph LBKT E // ê
-//#define C_ICRC &digraph LBKT I // î
-//#define C_OCRC &digraph LBKT O // ô
-//#define C_UCRC &digraph LBKT U // û
-//#define C_YCRC &digraph LBKT Y // ŷ
-//
-//// diaeresis
-//#define C_ADIA &digraph LBRC Q // ä
-//#define C_EDIA &digraph LBRC E // ë
-//#define C_IDIA &digraph LBRC I // ï
-//#define C_ODIA &digraph LBRC O // ö
-//#define C_UDIA &digraph LBRC U // ü
-//#define C_YDIA &digraph LBRC Y // ÿ
 // Emulated layouts (experimental!)
 #ifdef KB_EMULATION_DVORAK
   #include "emulations/dvorak.dtsi"

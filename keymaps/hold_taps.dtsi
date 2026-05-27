@@ -241,7 +241,7 @@
       flavor = "hold-preferred";
       bindings = <&kp>, <&kp>;
     };
-    sckShort { // same as sck, but faster for gaming
+    sckShort: space_cadet_key_gaming { // same as sck, but faster for gaming
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <75>;

@@ -97,9 +97,9 @@
 		game_qweRTS_layer: game_qweRTS_layer {
 			display-name = "GameQweRTS";
 			bindings = <
-				&kp DEL                        &kp K               &kp Q &kp T   &kp D   &kp J                 &none    &kp C_VOL_DN &kp C_VOL_UP    &none &none &to BASE_LAYER
-				&EZ_SL(GAME_REACHRTS_LAYER)    &sckShort LSHIFT COMMA   &kp A &kp S   &kp I   &kp G            &none    &none     &kp C_MIC_MUTE     &none     &none   &trans
-				&kp ESCAPE                     &kp B               &kp Z &kp X   &kp W   &kp V                 &none    &none     &none     &none    &none   &trans
+				&kp DEL                        &kp K               &kp Q &kp T   &kp D   &kp J                 &none    &kp C_VOL_DN &kp C_VOL_UP    &none &none   &to BASE_LAYER
+				&EZ_SL(GAME_REACHRTS_LAYER)    &sckShort LSHIFT COMMA   &kp A &kp S   &kp I   &kp G            &none    &none        &kp C_MIC_MUTE  &none &none   &trans
+				&kp ESCAPE                     &kp B               &kp Z &kp X   &kp W   &kp V                 &none    &none        &none           &none &none   &trans
 		                               &kp LSHIFT &lt GAME_HOMERTS_LAYER SPACE   &kp LCTL                  &trans  &trans  &trans
 			>;
 		};
@@ -132,9 +132,9 @@
 		game_qwertFPS_layer: game_qwertFPS_layer {
 			display-name = "GameQwertFPS";
 			bindings = <
-				&kp TAB     &kp LALT  &kp Q &kp T   &kp D   &kp J                 &none    &kp C_VOL_DN &kp C_VOL_UP     &none &none  &to BASE_LAYER
-				&kp ESCAPE  &kp LSHFT &kp A &kp S   &kp I   &kp G                 &none    &none     &kp C_MIC_MUTE      &none     &none   &trans
-				&kp Y       &kp LCTL  &kp Z &kp X   &kp W   &kp V                 &none    &none     &none							 &none     &none   &trans
+				&kp TAB     &kp LALT  &kp Q &kp T   &kp D   &kp J                 &none    &kp C_VOL_DN &kp C_VOL_UP     &none     &none   &to BASE_LAYER
+				&kp ESCAPE  &kp LSHFT &kp A &kp S   &kp I   &kp G                 &none    &none        &kp C_MIC_MUTE   &none     &none   &trans
+				&kp Y       &kp LCTL  &kp Z &kp X   &kp W   &kp V                 &none    &none        &none						 &none     &none   &trans
 				&EZ_SL(GAME_SPECIAL_LAYER) &kp SPACE  &EZ_SL(GAME_REACHFPS_LAYER)          &trans  &trans  &trans
 			>;
 		};

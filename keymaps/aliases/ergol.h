@@ -63,4 +63,4 @@
 #define S_MONEY &kp LS(N1)
 
 // custom keys
-#define C_MIC_MUTE &kp LG(BSLH)
+#define C_MIC_MUTE &kp LGUI(BSLH)
